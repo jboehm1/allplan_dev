@@ -7,7 +7,7 @@ $GIT_PATH = "C:\Users\jb\Documents\Code\allplan-dev"
 
 Write-Host "Copying from Allplan to Git..."
 
-Copy-Item "$ALLPLAN_PATH\Library\PythonParts\" `
+Copy-Item "$ALLPLAN_PATH\Library\PythonPartsScripts\" `
   -Destination "$GIT_PATH\pythonparts\" -Force -Recurse
 
 Copy-Item "$ALLPLAN_PATH\PythonPartsScripts\" `
