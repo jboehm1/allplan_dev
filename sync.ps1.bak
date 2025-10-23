@@ -1,0 +1,23 @@
+# Copie depuis Allplan vers Git
+$ALLPLAN_PATH = "C:\Users\jb\Documents\Nemetschek\Allplan\2026\Usr\Local"
+$GIT_PATH = "C:\Users\jb\Documents\Code\allplan-dev"
+
+# Copy TestCube
+Copy-Item "$ALLPLAN_PATH\Library\PythonParts\" `
+  -Destination "$GIT_PATH\pythonparts\" -Force
+
+Copy-Item "$ALLPLAN_PATH\PythonPartsScripts\" `
+  -Destination "$GIT_PATH\pythonparts\" -Force
+
+Write-Host "✓ Files synced from Allplan to Git"
+
+# Commit automatiquement si changements
+cd $GIT_PATH
+$status = git status --porcelain
+if ($status) {
+    git add .
+    git commit -m "sync: update from Allplan"
+    Write-Host " Changes committed"
+} else {
+    Write-Host " No changes to commit"
+}
