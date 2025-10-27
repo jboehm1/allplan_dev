@@ -1,0 +1,78 @@
+{
+  "version": "1.0",
+  "metadata": {
+    "author": "JB",
+    "date": "2025-10-25",
+    "description": "Solar carport array configuration"
+  },
+  "projects": [
+    {
+      "name": "Project_A_Standard",
+      "enabled": true,
+      "modules": {
+        "rows": 3,
+        "cols": 4,
+        "width": 1000,
+        "height": 2000,
+        "thickness": 35
+      },
+      "gaps": {
+        "row": 50,
+        "col": 50
+      },
+      "plate": {
+        "thickness": 50,
+        "offset": 0
+      },
+      "roof": {
+        "createSecondSide": true,
+        "angle": 15,
+        "ridgeHeight": 1000
+      },
+      "placement": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "colors": {
+        "plate": 7,
+        "frame": 4,
+        "pv": 21
+      }
+    },
+    {
+      "name": "Project_B_Large",
+      "enabled": true,
+      "modules": {
+        "rows": 5,
+        "cols": 6,
+        "width": 1100,
+        "height": 2100,
+        "thickness": 40
+      },
+      "gaps": {
+        "row": 60,
+        "col": 60
+      },
+      "plate": {
+        "thickness": 60,
+        "offset": 0
+      },
+      "roof": {
+        "createSecondSide": false,
+        "angle": 0,
+        "ridgeHeight": 0
+      },
+      "placement": {
+        "x": 10000,
+        "y": 0,
+        "z": 0
+      },
+      "colors": {
+        "plate": 7,
+        "frame": 4,
+        "pv": 21
+      }
+    }
+  ]
+}
