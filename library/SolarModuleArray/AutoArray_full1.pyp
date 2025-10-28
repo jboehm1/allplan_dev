@@ -3,7 +3,7 @@
     <Script>
         <Name>SolarModuleArray\AutoArray_full.py</Name>
         <Title>Solar Mounting System - 3D Model</Title>
-        <Version>1.0.8</Version>
+        <Version>1.0.5</Version>
     </Script>
 
     <Page>

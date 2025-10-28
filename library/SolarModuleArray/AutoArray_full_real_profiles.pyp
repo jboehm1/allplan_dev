@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Element>
     <Script>
-        <Name>SolarModuleArray\AutoArray_full.py</Name>
-        <Title>Solar Mounting System - 3D Model</Title>
-        <Version>1.0.8</Version>
+        <Name>SolarModuleArray\AutoArray_full_real_profiles.py</Name>
+        <Title>Solar Mounting System - Real Aluminum Profiles</Title>
+        <Version>1.2.0</Version>
     </Script>
 
     <Page>
